@@ -18,7 +18,8 @@
 							<%= image_tag room.photos[0].image.url(:thumb) if room.photos.length > 0 %>
 						</div>		
 						<div class="col-md-7">
-							<h4><%= room.user.fullname %></h4>
+							<h4>Dr(a)<%= room.user.fullname %></h4>
+							<h5><%= room.home_type %></h5>
 						</div>		
 						<div class="col-md-3 right">
 							<%= link_to "Update", edit_room_path(room), class: "btn btn-primary" %>
